@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极速电竞 · 杂志专题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            background: #f2f0ec;
+            color: #2e2b27;
+            line-height: 1.7;
+        }
+
+        /* 深色头图，半透明纹理 overlay */
+        .hero {
+            position: relative;
+            background: #121212 url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMzAgMTBhMjAgMjAgMCAwIDAtMjAgMjAgMjAgMjAgMCAwIDAgMjAgMjAgMjAgMjAgMCAwIDAgMjAtMjAgMjAgMjAgMCAwIDAtMjAtMjB6IiBmaWxsPSIjMjQyNDI0IiBmaWxsLW9wYWNpdHk9Ii4wNSIvPjwvc3ZnPg==');
+            background-size: 80px 80px;
+            padding: 5rem 1.5rem 3.5rem;
+            text-align: center;
+            color: #eae6df;
+            border-bottom: 4px solid #b58d5b;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+        }
+
+        .hero .sub {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: #c9b69b;
+            border-top: 1px solid #4b4238;
+            display: inline-block;
+            padding-top: 0.6rem;
+            margin-top: 0.3rem;
+        }
+
+        /* 浅色正文区，卡片式分段 */
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 2.8rem 1.5rem 3.5rem;
+        }
+
+        .intro-card {
+            background: #ffffff;
+            padding: 2.2rem 2.5rem;
+            border-radius: 0 20px 0 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            margin-bottom: 2.2rem;
+            border-left: 3px solid #b58d5b;
+        }
+
+        .intro-card:last-of-type {
+            margin-bottom: 2.8rem;
+        }
+
+        .intro-card h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #2b241e;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #d8cfc4;
+            padding-bottom: 0.35rem;
+            letter-spacing: 0.04em;
+        }
+
+        .intro-card p {
+            font-size: 1rem;
+            margin-bottom: 1.15rem;
+        }
+
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .accent-link {
+            color: #8f6f48;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #c0a17e;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .accent-link:hover {
+            color: #5f4329;
+            border-bottom: 1px solid #5f4329;
+        }
+
+        /* 页尾提示 */
+        .footer-note {
+            text-align: center;
+            border-top: 1px solid #d8cfc4;
+            padding-top: 2rem;
+            margin-top: 1rem;
+            color: #6b6055;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .footer-note em {
+            font-style: normal;
+            background: #e2dbd2;
+            padding: 0 6px;
+            color: #3e372f;
+        }
+
+        .footer-note .ref {
+            margin-top: 0.6rem;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 640px) {
+            .hero {
+                padding: 3rem 1rem 2.2rem;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+                letter-spacing: 0.08em;
+            }
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+            .container {
+                padding: 1.8rem 1rem 2.2rem;
+            }
+            .intro-card {
+                padding: 1.5rem 1.3rem;
+                border-left-width: 2px;
+                border-radius: 0 12px 0 12px;
+            }
+            .intro-card h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .intro-card {
+                padding: 1.2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>极速电竞</h1>
+        <div class="sub">从日常查询到对照阅读 · 一份杂志式侧写</div>
+    </header>
+
+    <div class="container">
+        <section class="intro-card">
+            <h2>一、信息归拢：查询之外的一种习惯</h2>
+            <p>许多人将 <a href="https://cn-ssl-jisu.com" class="accent-link">极速电竞</a> 视作检索赛事与数据的起点，但事实上，这个站点提供的远非一串串成绩。无论是联赛积分榜的变动，还是俱乐部近期的轮换记录，保持一种日常翻阅的习惯，往往比临时抱佛脚更能把握脉络。当你把几周的页面并排对照，会发现某些趋势早已写在数字里。</p>
+            <p>在信息过载的时代，一个干净、聚焦的参考页面，本身就是稀缺物。它不替你做决定，但可以成为你做决定前的那盏台灯。</p>
+        </section>
+
+        <section class="intro-card">
+            <h2>二、对照阅读：数据背后的叙事</h2>
+            <p>电子竞技的迷人之处，在于它同时具备竞技的残酷与游戏的想象力。单看一场比赛的统计，你只能得到谁胜谁负；但把同一支队伍在过去半年间的参赛记录并排放置，你会读到一种独特的叙事——阵容的磨合、版本的适应、以及选手状态的波动曲线。<a href="https://cn-ssl-jisu.com" class="accent-link">极速电竞</a> 在信息呈现上保持了一种克制，让读者自己从数字中发现故事，而不是被推送结论。</p>
+            <p>这种阅读方式有点像翻阅一本旧杂志：你带着一个模糊的问题翻开，却带着三四个新的疑问合上。保持疑问，往往比获得答案更有价值。</p>
+        </section>
+
+        <section class="intro-card">
+            <h2>三、延伸阅读：从一条记录到一片版图</h2>
+            <p>一个真正的资料页面，应当允许读者随时跳转、交叉比对。当你查询某场关键对决的阵容时，也许顺手打开了另一赛区的类似对局，或者回溯到几周前的版本更新节点。这种非线性的浏览，恰好是理解电竞生态最自然的方式。<a href="https://cn-ssl-jisu.com" class="accent-link">极速电竞</a> 的结构支持这种漫游式的阅读，你可以从一场比赛出发，逐渐拼凑出整个赛季的轮廓。</p>
+            <p>延伸阅读不是负担，而是一种主动的乐趣。就像在图书馆里沿着书架编号行走，不经意间抽出一本完全无关的书，却恰好回答了你先前没想通的问题。</p>
+        </section>
+
+        <div class="footer-note">
+            <p>以上内容并非指南，更像是一份阅读笔记的摘要。<em>极速电竞</em> 本身只是一个安静的角落，等待被翻阅。</p>
+            <p class="ref">— 杂志专题 · 第 024 号 —</p>
+        </div>
+    </div>
+</body>
+</html>
